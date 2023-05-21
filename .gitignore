@@ -3,8 +3,15 @@ Task_1_powTo2/.cache/
 Task_1_powTo2/build/
 Task_1_powTo2/.vscode/
 Task_1_powTo2/bin/MAIN
+Task_1_powTo2/bin/
+
 Task_2_table/.cache/
 Task_2_table/build/
 Task_2_table/.vscode/
 Task_2_table/bin/
+
+Task_3_counterVar/.cache/
+Task_3_counterVar/bin/
+Task_3_counterVar/build/
+Task_3_counterVar/.vscode/
 
