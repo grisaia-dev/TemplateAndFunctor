@@ -4,7 +4,7 @@
 int main(void) {
     CounterVar cv;
     const int my_list[] = {4, 1, 3, 6, 25, 54};
-    cv = std::for_each(my_list, my_list+sizeof(my_list)/sizeof(my_list[0]), cv);
+    cv = std::for_each(my_list, my_list+sizeof(my_list)/sizeof(int), cv);
 
     std::cout << "[IN]: ";
     for (auto& a : my_list) {
