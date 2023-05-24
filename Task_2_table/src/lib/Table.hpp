@@ -5,18 +5,19 @@ template<class T>
 class Table {
 private:
     T** array = nullptr;
-    unsigned int rows;
-    unsigned int cols;
+    const unsigned int rows;
+    const unsigned int cols;
 public:
-    Table(int row, int col) : rows(row), cols(col) {
-        array = new T*[rows];
+    Table(const int row, const int col) : rows(row), cols(col) {
+        this->array = new T*[rows];
         for (unsigned int i=0; i < rows; i++)
-            array[i] = new T[cols];
+            this->array[i] = new T[cols];
     }
 
-    int* operator[](const int i) const { return array[i]; }
+    T* operator[](size_t i) { return array[i]; } // Для не константной версии
+    const T* operator[](size_t i) const { return array[i]; } // Для константной версии
 
-    std::ostream& operator<<(std::ostream& os) { return os << array; }
+    const std::ostream& operator<<(std::ostream& os) { return os << array; }
 
     const int size() const { return rows * cols; }
 

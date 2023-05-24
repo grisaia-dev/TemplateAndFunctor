@@ -6,4 +6,4 @@ project(MAIN LANGUAGES CXX)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
-add_executable(${PROJECT_NAME} src/main.cpp src/lib/TemplatePow.hpp src/lib/TemplatePow.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp src/lib/TemplatePow.hpp)

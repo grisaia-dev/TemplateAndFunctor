@@ -6,5 +6,9 @@ T pow(T &variable) {
     return variable * variable;
 }
 
-template <>
-std::vector<int> pow(std::vector<int>& variable);
+template <class T>
+std::vector<T> pow(std::vector<T>& variable) {
+    for (auto& a : variable)
+        a *= a;
+    return variable;
+}
